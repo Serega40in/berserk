@@ -1,9 +1,9 @@
 $(document).ready(function() {
   $("body").css("display", "none");
-  setTimeout(function() {$("body").fadeIn(700);}, 630);  
+  setTimeout(function() {$("body").fadeIn(700);}, 630);
   $('.close').click(function(){
       connectFormEnd();
-  });  
+  });
 });
 
 function goToBlackPage(url) {
@@ -77,8 +77,8 @@ function whiteEnd() {
                .appendTo(context.$element());
       });
     });
-    
-    this.get('#/home/', function(context) {        
+
+    this.get('#/home/', function(context) {
         var str=location.href.toLowerCase();
         context.app.swap('');
         context.render('templates/home.template', {})
@@ -133,7 +133,7 @@ function connectFormDo() {
 }
 
 function connectFormEnd(){
-    $('.connect-form').fadeOut(500); 
+    $('.connect-form').fadeOut(500);
     $('.connect-form input').css('visibility','hidden');
     $('.connect-form button').css('visibility','hidden');
     $('.connect-form p').css('visibility','hidden');
@@ -157,7 +157,7 @@ function orderDo(ind) {
 
 function orderEnd(ind){
     isOrder = false;
-    $('.ps-item:eq('+ ind +')').find('.order').slideUp(); 
+    $('.ps-item:eq('+ ind +')').find('.order').slideUp();
     $('.ps-item:eq('+ ind +')').find('.order-form').fadeOut(100);
     $('.ps-item:eq('+ ind +')').find('.i-name p').fadeIn(1000);
     $('.ps-item:eq('+ ind +')').find('.form-more').fadeIn(1000);
@@ -166,11 +166,11 @@ function orderEnd(ind){
 function orderPackDo(ind) {
   $('#pr'+ind+'').addClass('order-pack');
   $('#pr'+ind+'').find('ul').css('display','none');
-  $('#pr'+ind+'').find('.btnpackzak').css('display','none'); 
+  $('#pr'+ind+'').find('.btnpackzak').css('display','none');
   $('#pr'+ind+'').find('.order-pr').fadeIn();
   setTimeout(function(){
     $('#pr'+ind+'').find('.order-form-pr').fadeIn();
-  },400);  
+  },400);
 }
 
 function call(id) {
