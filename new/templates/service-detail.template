@@ -1,9 +1,0 @@
-<a href="#/services/" class="back">Назад</a>
-<article class="service-detail">
-  <section>
-    <h2><%= item.title %></h2>
-    <p class="price"><span>Цена: </span><%= item.price %></p>
-    <p><%= item.description %></p>
-    <button>Заказать</button>
-  </section>
-</article>
