@@ -1,4 +1,7 @@
-
+body{
+  overflow-x: hidden;
+  position: relative;
+}
 /* html, body{
   height: 100%;
 } */
@@ -82,7 +85,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} 
 .block-3{
   width: 30%;
 
@@ -225,8 +228,8 @@ footer {
           justify-content: center;
 }
 .outer-menu .menu > div {
-  width: 35vw;
-  height: 35vw;
+/*   width: 35vw;
+height: 35vw; */
   color: black;
   background: white;
   border-radius: 10%;
@@ -252,6 +255,8 @@ footer {
 }
 .outer-menu .menu > div > div {
   text-align: center;
+  position: relative;
+  z-index: 1000;
   max-width: 90vw;
   max-height: 100vh;
   opacity: 0;
@@ -407,6 +412,7 @@ h1 {
     height: 40px;
     outline: none;
     border: none;
+    background: #d9d9d9;
     border-radius: 10px;
     text-transform: uppercase;
     font-weight: bold;
