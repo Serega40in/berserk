@@ -1,11 +1,3 @@
-$(document).ready(function() {
-  $("body").css("display", "none");
-  setTimeout(function() {$("body").fadeIn(700);}, 630);
-  $('.close').click(function(){
-      connectFormEnd();
-  });
-});
-
 function goToBlackPage(url) {
   blackDo(); // затемняем кругом в теч сек
   setTimeout(function() {
@@ -55,30 +47,22 @@ function whiteEnd() {
 
     this.around(function(callback) {
       var context = this;
-      this.load('data/services.json')
+      this.load('data/articles.json')
           .then(function(items) {
             context.items = items;
           })
           .then(callback);
     });
 
-    this.get('#/form/', function(context) {
-        var str=location.href.toLowerCase();
-        context.app.swap('');
-        context.render('templates/form.template', {})
-               .appendTo(context.$element());
-    });
-
-
-    this.get('#/service/', function(context) {
+    this.get('#/', function(context) {
       context.app.swap('');
       $.each(this.items, function(i, item) {
-        context.render('templates/service.template', {id: i, item: item})
+        context.render('templates/article.template', {id: i, item: item})
                .appendTo(context.$element());
       });
     });
-
-    this.get('#/home/', function(context) {
+    
+    this.get('#/home/', function(context) {        
         var str=location.href.toLowerCase();
         context.app.swap('');
         context.render('templates/home.template', {})
@@ -99,10 +83,10 @@ function whiteEnd() {
                .appendTo(context.$element());
     });
 
-    this.get('#/service/:id', function(context) {
+    this.get('#/article/:id', function(context) {
       this.item = this.items[this.params['id']];
       if (!this.item) { return this.notFound(); }
-      this.partial('templates/service-detail.template');
+      this.partial('templates/article-detail.template');
     });
 
 
@@ -120,65 +104,3 @@ function whiteEnd() {
   });
 
 })(jQuery);
-
-
-function connectFormDo() {
-  $('.connect-form').css('display','block');
-  setTimeout(function(){
-    $('.connect-form input').css('visibility','unset');
-    $('.connect-form button').css('visibility','unset');
-    $('.connect-form p').css('visibility','unset');
-    $('.formdiv').addClass('forclose');
-  }, 550)
-}
-
-function connectFormEnd(){
-    $('.connect-form').fadeOut(500);
-    $('.connect-form input').css('visibility','hidden');
-    $('.connect-form button').css('visibility','hidden');
-    $('.connect-form p').css('visibility','hidden');
-    $('.formdiv').removeClass('forclose');
-}
-
-var isOrder = false;
-
-function clickBtnOrd(ind) {
-  console.log(ind);
-  if (!isOrder) {orderDo(ind)} else {orderEnd(ind)}
-}
-
-function orderDo(ind) {
-  isOrder = true;
-  $('.ps-item:eq('+ ind +')').find('.i-name p').fadeOut(100);
-  $('.ps-item:eq('+ ind +')').find('.form-more').fadeOut(100);
-  $('.ps-item:eq('+ ind +')').find('.order').slideDown();
-  $('.ps-item:eq('+ ind +')').find('.order-form').fadeIn(550);
-}
-
-function orderEnd(ind){
-    isOrder = false;
-    $('.ps-item:eq('+ ind +')').find('.order').slideUp();
-    $('.ps-item:eq('+ ind +')').find('.order-form').fadeOut(100);
-    $('.ps-item:eq('+ ind +')').find('.i-name p').fadeIn(1000);
-    $('.ps-item:eq('+ ind +')').find('.form-more').fadeIn(1000);
-}
-
-function orderPackDo(ind) {
-  $('#pr'+ind+'').addClass('order-pack');
-  $('#pr'+ind+'').find('ul').css('display','none');
-  $('#pr'+ind+'').find('.btnpackzak').css('display','none');
-  $('#pr'+ind+'').find('.order-pr').fadeIn();
-  setTimeout(function(){
-    $('#pr'+ind+'').find('.order-form-pr').fadeIn();
-  },400);
-}
-
-function call(id) {
-  alert(id);
-  var msg   = $('#'+id).serialize();
-  $.ajax({
-    type: 'POST',
-    url: 'form.php',
-    data: msg
-  });
-}

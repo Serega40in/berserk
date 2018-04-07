@@ -1,21 +1,28 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>WEB-студия BERSERK</title>
-  <script  src="js/jquery-1.11.3.min.js" type="text/javascript"></script>
-  <script  src="js/sammy.min.js" type="text/javascript"></script>
-  <script src="js/sammy.template.js" type="text/javascript"></script>
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
-  <link rel="stylesheet" href="fonts.css">
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" type="text/css" href="css/logo.css">
-  <link rel="stylesheet" href="css/router.css" />
-  <script src="app.js"></script>
+<head>    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WEB-студия BERSERK</title>
+    <script  src="js/jquery-1.11.3.min.js" type="text/javascript"></script>
+    <script  src="js/sammy.min.js" type="text/javascript"></script>
+    <script src="js/sammy.template.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/logo.css">
+    <link rel="stylesheet" href="css/router.css"/>
+    <link rel="stylesheet" href="css/media.css">
+    <script src="app.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+            $("body").css("display", "none");
+            setTimeout(function() {$("body").fadeIn(700);}, 630);            
+    });
+</script>
 </head>
-<body>
+<body>  
   <div class="black"></div>
   <div class="white"></div>
   <div class="container ">
@@ -35,7 +42,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div>      
     <div id="app">
     </div>
     <footer>
@@ -43,7 +50,7 @@
           Web-студия полного цикла от прототипа проекта до продвижения в интернет
         </div>
         <div class="zakaz-btn block-3">
-          <button onclick="connectFormDo();" class="zakaz">Форма связи</button>
+          <button class="zakaz">Форма связи</button>
         </div>
         <div class="contacts block-3">
             <span>+7 931 202 49 23</span>
@@ -54,19 +61,6 @@
             </div>
         </div>
       </footer>
-  </div>
-  <div class="connect-form">
-    <div class="formdiv">
-      <form onsubmit="call()" method="POST" class="formx" action="#/form/">
-        <div class="close"></div>
-        <input type="hidden" name="where" value="Форма связи">
-        <input type="text" name="name" placeholder="Имя">
-        <input type="tel" name="tel" placeholder="Телефон" required>
-        <p>и/или</p>
-        <input type="email" name="email" placeholder="Email">
-        <button>Отправить</button>
-      </form>
-    </div>
   </div>
 </body>
 </html>
