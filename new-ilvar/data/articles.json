@@ -1,0 +1,50 @@
+[
+  {
+    "title": "Reading csv file using javascript",
+    "url": "http://www.amazon.com/Door-Religious-Knives/dp/B001FGW0UQ/?tag=quirkey-20",
+    "excerpt":"CSV or comma-separated-values is one of most popular file format used to store tabular data, such as a database or spreadsheet. Using new HTML5 FileReader API you can read a csv on fly, no server side interaction is required",
+    "cover":"https://coderexample.com/wp-content/uploads/2016/08/Reading-csv-file-using-javascript.png"
+  },
+  {
+    "title": "Animated Indian flag in pure Css, No Image, No Js.",
+    "url": "https://coderexample.com/animated-indian-flag-in-pure-css-no-image-no-js/",
+    "excerpt":"I recently posted myntra logo in pure CSS and I got a lot of positive feedback on how I created without using a single piece of an image. I decided to create another post to celebrate 67th Republic Day of India to explain how I managed to create animated Indian flag in pure CSS. I promise no image or javascript will be harmed during this experiment. lets get started ",
+    "cover":"https://coderexample.com/wp-content/uploads/2016/01/Animated-Indian-flag-in-pure-Css-No-Image-No-Js.gif"
+  },
+  {
+    "title": "Some unknown Chrome dev tools tricks you should know",
+    "url": "https://coderexample.com/unknown-chrome-dev-tools-tricks-you-should-know/",
+    "excerpt":"Google Chrome is my favorite browser, not only that it’s fast, but it has an awesome developer tool which is very useful while debugging. Here’s a list of unknown tricks that’s really useful and can save lots of development time. Let’s open chrome devTools using F12 or CTRL+SHIFT+I.",
+    "cover":"https://coderexample.com/wp-content/uploads/2016/07/cover.gif"
+  },
+  {
+    "title": "Dealing with JavaScript Framework Fatigue",
+    "url": "https://coderexample.com/dealing-javascript-framework-fatigue/",
+    "excerpt":"The Javascript space is indeed crowded, So many Ideas, Libraries, frameworks, Tools even though it’s all very exciting. It’s very difficult to pick up those for a developer. Learning each one of them is time-consuming.",
+    "cover":"https://coderexample.com/wp-content/uploads/2016/07/Dealing-with-JavaScript-Framework-Fatigue-1.png"
+  },
+  {
+    "title": "How to add a Facebook save button to your website.",
+    "url": "https://coderexample.com/add-facebook-save-button-website/",
+    "excerpt":"Many of us have some bookmark extension or google keep or pocket to bookmark important links that you can access later. Recently facebook introduces “Save” button to keep all the links bookmarked. It’s very handy when someone visited your blog/website, they can bookmark your link to facebook so they can read it later, you can be categorized it like photo, links, places, videos etc, Amazing isn’t it.",
+    "cover":"https://coderexample.com/wp-content/uploads/2016/07/fb_save.png"
+  },
+  {
+    "title": "Form validation in pure css",
+    "url": "https://coderexample.com/form-validation-in-pure-css/",
+    "excerpt":"The new css3 specification two css selectors :valid and :invalid. These are basically a pseudo-class which can work together with the form input element . Suppose you have an input element to check if a user types something correct or wrong. For checking, you only need to use html5 required attribute. Now with the :valid/:invalid selector you can edit the color of an input field so the user knows if it is correct or wrong.",
+    "cover":"https://coderexample.com/wp-content/uploads/2016/06/form-validation-in-pure-css.gif"
+  },
+  {
+    "title": "Embed Facebook Messenger widget in your website",
+    "url": "https://coderexample.com/embed-facebook-messenger-widget-website/",
+    "excerpt":"Facebook introduced new Messenger widget, It allows website/blog owners to provide their users with an easy way to message/contact or ask any query through facebook page or profile. In this article, we will show you how to embed/integrate Messenger widget in your site. There are various techniques, I will explain each technique step by step.",
+    "cover":"https://coderexample.com/wp-content/uploads/2016/06/facebook-messenger.gif"
+  },
+  {
+    "title": "What's New in jQuery 3.0",
+    "url": "https://coderexample.com/whats-new-jquery-3-0/",
+    "excerpt":"jQuery is the world’s most popular JavaScript library. The jQuery team has released the full version of jQuery 3.0 on 9th of June’2016. In this version, some interesting changes included such as ES6 promises, requestAnimationFrame API etc. In this post, I’m going to highlight the most important changes made in jQuery 3.0",
+    "cover":"https://coderexample.com/wp-content/uploads/2016/06/jquery_logo.png"
+  }
+]

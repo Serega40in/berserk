@@ -1,0 +1,65 @@
+.black {
+	display: none;
+	position: fixed;
+	top: -50vw;
+	left: -50vw;
+	width: 200vw;
+	height: 200vw;
+	border-radius: 200vw;
+	z-index: 99999;
+	background-color: #000;
+	opacity: 0;
+	animation: OnLoad 0.5s linear;
+    -webkit-animation: OnLoad 0.5s linear;
+    animation-fill-mode: forwards;
+     -webkit-animation-fill-mode: forwards;
+}
+.white {
+	display: none;
+	position: fixed;
+	top: -50vh;
+	left: -50vw;
+	width: 200vw;
+	height: 200vh;
+	border-radius: 200vw;
+	z-index: 99999;
+	background-color: #fff;	
+	opacity: 0;
+	animation: OnLoad 0.5s linear;
+    -webkit-animation: OnLoad 0.5s linear;
+    animation-fill-mode: forwards;
+     -webkit-animation-fill-mode: forwards;
+}
+@keyframes OnLoad {
+    from {
+        width: 0.1px;
+        height: 0.1px;
+        top: 50vh;
+		left: 50vw;
+        opacity: 0.9;
+    }
+    to {
+		top: -50vw;
+		left: -50vw;
+		width: 200vw;
+		height: 200vw;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes OnLoad {
+    from {
+        width: 0.1px;
+        height: 0.1px;
+        top: 50vh;
+		left: 50vw;
+        opacity: 0.9;
+    }
+    to {
+		top: -50vw;
+		left: -50vw;
+		width: 200vw;
+		height: 200vw;
+        opacity: 1;
+    }
+}

@@ -1,0 +1,8 @@
+<a href="#/" class="back">Back</a>
+<article>
+  <section>
+    <h2><%= item.title %></h2>
+    <img src="<%= item.cover %>" width="600px" height="290px"/>
+    <p><%= item.excerpt %><a href="<%= item.url %>" target="_blank"> Read more...</a></p>
+  </section>
+</article>

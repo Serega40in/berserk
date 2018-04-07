@@ -1,0 +1,10 @@
+<section class="point-services">
+    <div class="ps-item">
+      <div class="i-name">
+        <p style="color: #000"><%= item.title %></p>
+        <form action="#/service/<%= id %>"><button class="read-more">Подробнее</button></form>
+      </div>
+      <h3 class="price">1 500 руб</h3>
+      <button class="i-btn-order">Заказать</button>
+    </div>
+</section>
