@@ -4,6 +4,7 @@
     <h2><%= item.title %></h2>
     <p class="price"><span>Цена: </span><%= item.price %></p>
     <p><%= item.description %></p>
-    <button>Заказать</button>
+	<input id="fordop" type="hidden" name="fordop" value="<%= item.title %>">
+	<button onclick="connectFormDo();">Заказать</button>
   </section>
 </article>

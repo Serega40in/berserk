@@ -58,8 +58,9 @@
   </div>
   <div class="connect-form">
     <div class="formdiv">
-      <form onsubmit="call()" method="POST" class="formx" action="#/form/">
+      <form id="mainform" onsubmit="call('mainform')" method="POST" class="formx" action="#/form/">
         <div class="close"></div>
+        <input type="hidden" name="dop" id="dop">
         <input type="hidden" name="where" value="Форма связи">
         <input type="text" name="name" placeholder="Имя">
         <input type="tel" name="tel" placeholder="Телефон" required>

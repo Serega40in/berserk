@@ -123,6 +123,7 @@ function whiteEnd() {
 
 
 function connectFormDo() {
+	moveData();
   $('.connect-form').css('display','block');
   setTimeout(function(){
     $('.connect-form input').css('visibility','unset');
@@ -174,7 +175,6 @@ function orderPackDo(ind) {
 }
 
 function call(id) {
-  alert(id);
   var msg   = $('#'+id).serialize();
   $.ajax({
     type: 'POST',
@@ -182,3 +182,6 @@ function call(id) {
     data: msg
   });
 }
+function moveData() {
+	$('#dop').val($('#fordop').val());
+}	
