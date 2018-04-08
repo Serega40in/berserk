@@ -439,6 +439,40 @@ h1 {
   display: flex;
   flex-wrap: wrap;  
 }
+.order {
+  display: none;
+  position: relative;
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+}
+.order-form{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.order input {
+  margin: auto;
+  width: 75%;
+  height: 38px;
+  padding-left: 10px;
+  font-size: 1em;
+  border: 1px solid #000000cf;
+  border-radius: 3px;
+}
+.order button {
+  margin: auto;
+  width:60%;
+  height: 38px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+}
 .ps-item {
   text-align: center;
   width: 300px;
@@ -459,6 +493,9 @@ h1 {
   margin: auto;
   color: #ffffffeb;
   letter-spacing: 0.4px;
+}
+.i-name form {
+  margin: auto;
 }
 .read-more {
   cursor: pointer;
@@ -512,6 +549,7 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  min-height: 450px;
 }
 .promo {
   width: 250px;
@@ -650,4 +688,167 @@ h1 {
 .team .person .avatar img {
   width: 350px;
   border: 1px solid;
+}
+.service-detail h2 {
+  font-size: 4em;
+  margin: 50px;
+  line-height: 1.7em;
+}
+.service-detail p {
+  margin: 20px 50px;
+  font-size: 1.6em;
+  line-height: 1.7em;
+}
+.service-detail .price {
+  color: #000;  
+  margin: 0 50px;
+  font-size: 2em;
+}
+.service-detail button {
+  margin: 0 50px;
+  width: 156px;
+  height: 40px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+}
+.back {
+  cursor: pointer;
+  font-size: 1.5em;
+  text-decoration: underline;  
+}
+.connect-form {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: auto;
+  background: #0000006b;
+}
+.formdiv {  
+  position: absolute;
+  margin: auto;
+  width: 350px;
+  height: 400px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  text-align: center;
+  background-color: #fffffff7;
+  border: 2px solid #afe1fb96;
+  border-radius: 3px;
+  animation: FormIn 0.5s linear;
+  -webkit-animation: FormIn 0.5s linear;
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+}
+.forclose:before {
+  position: absolute;
+  top: -48px;
+  left: 360px;
+  content: '\2718';
+  font-size: 3em;
+  color: black;
+}
+.close {
+  opacity: 0;
+  position: absolute;
+  top: -48px;
+  left: 360px;
+  width: 42px;
+  height: 50px;
+}
+.connect-form input {
+  visibility: hidden;
+  width: 300px;
+  height: 34px;
+  font-size: 21px;
+  margin: 25px auto;
+  padding-left: 3px;
+}
+.connect-form button {
+  visibility: hidden;
+  margin: 25px auto;
+  width: 156px;
+  height: 40px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+}
+.connect-form p {
+  visibility: hidden;
+}
+@keyframes FormIn {
+  from {
+    opacity: 0;
+    width: 700px;
+    height: 800px;
+  }
+  to {
+    width: 350px;
+    height: 400px;
+  }
+}
+@-webkit-keyframes FormIn {
+  from {
+    opacity: 0;
+    top: 0;
+    left: 0;
+    width: 700px;
+    height: 800px;
+  }
+  to {
+    width: 350px;
+    height: 400px;
+  }
+}
+.order-pack {
+  position: relative;
+  transform: scale(1.3);
+  z-index: 99;
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+}
+.order-pr {
+  display: none;
+  position: relative;
+  opacity: 1;
+  width: 100%;
+  height: 68%;
+}
+.order-form-pr{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.order-pr input {
+  margin: auto;
+  width: 75%;
+  height: 38px;
+  padding-left: 10px;
+  font-size: 1em;
+  border: 1px solid #000000cf;
+  border-radius: 3px;
+}
+.order-pr button {
+  margin: auto;
+  width:60%;
+  height: 38px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
 }

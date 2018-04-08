@@ -6,6 +6,9 @@
   .outer-menu .hamburger > div {
     background: white;
   }
+  .forclose:before {
+    color: #fff;
+  }
 </style>
 <div class="services">
   <div class="row">
@@ -19,104 +22,188 @@
   <section class="point-services">
     <div class="ps-item">
       <div class="i-name">
+        <div class="order">
+          <form id="f0" onsubmit="call('f0')" method="POST" action="#/form/" class="order-form formx">            
+            <input type="hidden" name="where" value="Прототипирование сайта">
+            <input type="tel" name="tel" placeholder="Телефон">
+            <button >Отправить</button>
+          </form>
+        </div>
         <p>Прототипирование сайта</p>
-        <button class="read-more">Подробнее</button>
+        <form class="form-more" onclick="goToWhitePage('#/service/0');">
+        <button onclick="" class="read-more">Подробнее</button>
+        </form>
       </div>
       <h3 class="price">1 500 руб</h3>
-      <button class="i-btn-order">Заказать</button>
+      <button onclick="clickBtnOrd(0);" class="i-btn-order">Заказать</button>
     </div>
     <div class="ps-item">
       <div class="i-name">
+        <div class="order">
+          <form id="f1" onsubmit="call('f1')" method="POST" action="#/form/" class="order-form formx">
+            <input type="hidden" name="where" value="Верстка сайта по готовому макету">
+            <input type="tel" name="tel" placeholder="Телефон">
+            <button >Отправить</button>
+          </form>
+        </div>
         <p>Верстка сайта по готовому макету</p>
+        <form class="form-more" onclick="goToWhitePage('#/service/1');">
         <button class="read-more">Подробнее</button>
+        </form>
       </div>
       <h3 class="price">3 000 руб/стр</h3>
-      <button class="i-btn-order">Заказать</button>
+      <button onclick="clickBtnOrd(1);" class="i-btn-order">Заказать</button>
     </div>
     <div class="ps-item">
       <div class="i-name">
+        <div class="order">
+          <form id="f2" onsubmit="call('f2')" method="POST" action="#/form/" class="order-form formx">
+            <input type="hidden" name="where" value="Разработка виджетов приложений для сайта">
+            <input type="tel" name="tel" placeholder="Телефон">
+            <button >Отправить</button>
+          </form>
+        </div>
         <p>Разработка виджетов приложений для сайта</p>
+        <form class="form-more" onclick="goToWhitePage('#/service/2');">
         <button class="read-more">Подробнее</button>
+        </form>
       </div>
-      <h3 class="price">от 1000 руб</h3>
-      <button class="i-btn-order">Заказать</button>
+      <h3 class="price">от 1 000 руб</h3>
+      <button onclick="clickBtnOrd(2);" class="i-btn-order">Заказать</button>
     </div>
     <div class="ps-item">
       <div class="i-name">
+        <div class="order">
+          <form id="f3" onsubmit="call('f3')" method="POST" action="#/form/" class="order-form formx">
+            <input type="hidden" name="where" value="Индивидуальный дизайн">
+            <input type="tel" name="tel" placeholder="Телефон">
+            <button >Отправить</button>
+          </form>
+        </div>
         <p>Индивидуальный дизайн</p>
+        <form class="form-more" onclick="goToWhitePage('#/service/3');">
         <button class="read-more">Подробнее</button>
+        </form>
       </div>
       <h3 class="price">от 3 000 руб</h3>
-      <button class="i-btn-order">Заказать</button>
+      <button onclick="clickBtnOrd(3);" class="i-btn-order">Заказать</button>
     </div>
     <div class="ps-item">
       <div class="i-name">
+        <div class="order">
+          <form id="f4" onsubmit="call('f4')" method="POST" action="#/form/" class="order-form formx">
+            <input type="hidden" name="where" value="Создание Landing Page">
+            <input type="tel" name="tel" placeholder="Телефон">
+            <button >Отправить</button>
+          </form>
+        </div>
         <p>Создание Landing Page</p>
+        <form class="form-more" onclick="goToWhitePage('#/service/4');">
         <button class="read-more">Подробнее</button>
+        </form>
       </div>
       <h3 class="price">5 блоков: 5 500 руб</h3>
-      <button class="i-btn-order">Заказать</button>
+      <button onclick="clickBtnOrd(4);" class="i-btn-order">Заказать</button>
     </div>
     <div class="ps-item">
       <div class="i-name">
+        <div class="order">
+          <form id="f5" onsubmit="call('f5')" method="POST" action="#/form/" class="order-form formx">
+            <input type="hidden" name="where" value="Создание интернет магазина">
+            <input type="tel" name="tel" placeholder="Телефон">
+            <button >Отправить</button>
+          </form>
+        </div>
         <p>Создание интернет магазина</p>
+        <form class="form-more" onclick="goToWhitePage('#/service/5');">
         <button class="read-more">Подробнее</button>
+        </form>
       </div>
       <h3 class="price">от 20 000 руб</h3>
-      <button class="i-btn-order">Заказать</button>
+      <button onclick="clickBtnOrd(5);" class="i-btn-order">Заказать</button>
     </div>
     <div class="ps-item">
       <div class="i-name">
+        <div class="order">
+          <form id="f6" onsubmit="call('f6')" method="POST" action="#/form/" class="order-form formx">
+            <input type="hidden" name="where" value="Создание корпоративного сайта с админ. панелью">
+            <input type="tel" name="tel" placeholder="Телефон">
+            <button >Отправить</button>
+          </form>
+        </div>
         <p>Создание корпоративного сайта с админ. панелью</p>
+        <form class="form-more" onclick="goToWhitePage('#/service/6');">
         <button class="read-more">Подробнее</button>
+        </form>
       </div>
       <h3 class="price">от 20 000 руб</h3>
-      <button class="i-btn-order">Заказать</button>
+      <button onclick="clickBtnOrd(6);" class="i-btn-order">Заказать</button>
     </div>
   </section>
   <section class="packages">
     <h1>Пакетные предложения</h1>
     <div class="offers-block">
       <div class="promos">  
-        <div class="promo">
+        <div id="pr1" class="promo">
           <div class="deal">
             <span>Быстрый старт</span>
             <span></span>
           </div>
           <span class="price">15 000 руб</span>
+          <div class="order-pr">
+            <form id="p1" onsubmit="call('p1')" method="POST" action="#/form/" class="order-form-pr formx">
+              <input type="hidden" name="where" value="пакет Быстрый старт">
+              <input type="tel" name="tel" placeholder="Телефон">
+              <button >Отправить</button>
+            </form>
+          </div>
           <ul class="features">
             <li>Короткий Landing Page</li>
             <li>Рекламная компания в ЯД</li>
             <li>9 000 руб из них идут на рекламный бюджет</li>
           </ul>
-          <button>Заказать</button>
+          <button class="btnpackzak" onclick="orderPackDo(1);">Заказать</button>
         </div>        
-        <div class="promo scale">
+        <div id="pr2" class="promo scale">
           <div class="deal">
             <span>Бизнес</span>
             <span></span>
           </div>
           <span class="price">150 000 руб</span>
+          <div class="order-pr">
+            <form id="p2" onsubmit="call('p2')" method="POST" action="#/form/" class="order-form-pr formx">
+              <input type="hidden" name="where" value="пакет Бизнес">
+              <input type="tel" name="tel" placeholder="Телефон">
+              <button >Отправить</button>
+            </form>
+          </div>
           <ul class="features">
             <li>Корпоративный сайт</li>
             <li>Административная панель для бизнеса</li>
             <li>Чат бот в телеграм для обработки заявок</li>   
             <li>Месяц активного продвижения в internet</li>   
           </ul>
-          <button>Заказать</button>
+          <button class="btnpackzak" onclick="orderPackDo(2);">Заказать</button>
         </div>
-        <div class="promo">
+        <div id="pr3" class="promo">
           <div class="deal">
             <span>Lite</span>
             <span></span>
           </div>
           <span class="price">50 000 руб</span>
+          <div class="order-pr">
+            <form id="p3" onsubmit="call('p3')" method="POST" action="#/form/" class="order-form-pr formx">
+              <input type="hidden" name="where" value="пакет Lite">
+              <input type="tel" name="tel" placeholder="Телефон">
+              <button >Отправить</button>
+            </form>
+          </div>
           <ul class="features">
             <li>Сайт уровня сложности интернет магазина или блога</li>
             <li>Индивидуальный дизайн</li>
             <li>Домен и хостинг на год в подарок</li>
           </ul>
-          <button>Заказать</button>
+          <button class="btnpackzak" onclick="orderPackDo(3);">Заказать</button>
         </div>
       </div>
     </div>
