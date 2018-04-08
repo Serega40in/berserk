@@ -15,7 +15,7 @@
     <div class="logo hoja">
         <img src="img/firepaw-min.png" alt="logo">
     </div>
-            <div class="title">
+    <div class="title">
       <h1>Услуги</h1>
     </div>
   </div>
@@ -23,7 +23,7 @@
     <div class="ps-item">
       <div class="i-name">
         <div class="order">
-          <form id="f0" onsubmit="call('f0')" method="POST" action="#/form/" class="order-form formx">            
+          <form id="f0" onsubmit="call('f0')" method="POST" action="#/form/" class="order-form formx">
             <input type="hidden" name="where" value="Прототипирование сайта">
             <input type="tel" name="tel" placeholder="Телефон">
             <button >Отправить</button>

@@ -17,6 +17,7 @@ $name=$_POST['name'];
 $tel=$_POST['tel'];  
 $email=$_POST['email'];  
 $where=$_POST['where'];
+$dop=$_POST['dop'];
 
 
 
@@ -26,6 +27,7 @@ $msg="
 <p>$date $time</p> 
 
 <p>Откуда: $where</p>
+<p> $dop </p>
 
 <p>Имя: $name</p>
 <p>Телефон: $tel</p>
