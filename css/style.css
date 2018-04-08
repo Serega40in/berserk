@@ -118,6 +118,7 @@ footer {
 .outer-menu .checkbox-toggle:checked ~ .menu {
   pointer-events: auto;
   visibility: visible;
+  z-index: 999;
 }
 .outer-menu .checkbox-toggle:checked ~ .menu > div {
   -webkit-transform: scale(1);
@@ -498,28 +499,28 @@ h1 {
   margin: auto;
 }
 .read-more {
-  cursor: pointer;
-  margin: auto;
-  width: 188px;
-  height: 29px;
-  background: #3e3e3e;
-  border: 1px solid #ffffff52;
-  border-radius: 1px;
-  color: #fff;
-  font-family: 'Conv_10339',Sans-Serif;
-  font-size: 0.6em;
-  letter-spacing: 0.5px;
+    cursor: pointer;
+    margin: auto;
+    width: 188px;
+    height: 29px;
+    background: #3e3e3e;
+    border: 1px solid rgba(255, 255, 255, .32);
+    border-radius: 1px;
+    color: #fff;
+    font-family: 'Conv_10339',Sans-Serif;
+    font-size: 0.6em;
+    letter-spacing: 0.5px;
 }
 .read-more:hover {
-  background: #7b7b7b;
-  border: 1px solid #ffffff24;
+    background: #7b7b7b;
+    border: 1px solid rgba(255, 255, 255, .14);
 }
 .price {
   margin: 10px auto;
   color: #ffffffeb;
 }
 .i-btn-order {
-  background: #f77918eb;
+  background: rgba(247, 121, 24, .9);
   width: 156px;
   height: 40px;
   outline: none;
@@ -530,7 +531,7 @@ h1 {
   cursor: pointer;
 }
 .i-btn-order:hover {
-  background: #f8ac18e6;
+    background: rgba(248, 172, 24, .9);
 }
 /*Пакеты*/
 .packages {
@@ -552,12 +553,15 @@ h1 {
   min-height: 450px;
 }
 .promo {
-  width: 250px;
-  margin: 23px 10px;
-  background: #f0f5fff7;
-  color: #f77c18;
-  float: left;
-  border: 1.3px solid #424141;
+    width: 250px;
+    min-height: 450px;
+    margin: 0 10px;
+    margin-top: 75px;
+    margin-bottom: 5px;
+    background: rgba(240, 245, 255, 0.96);
+    color: #f77c18;
+    float: left;
+    border: 1.3px solid #424141;
 }
 .deal {
   padding: 10px 0 0 0;
@@ -573,14 +577,14 @@ h1 {
   font-size: 13px;
 }
 .promo .price {
-  color: #fffffff7;
-  display: block;
-  width: 252px;
-  background: #000000e3;
-  margin: 15px 0 10px -1px;
-  text-align: center;
-  font-size: 23px;
-  padding: 17px 0 17px 0;
+    color: rgba(255, 255, 255, .96);
+    display: block;
+    width: 252px;
+    background: rgba(0, 0, 0, .9);
+    margin: 15px 0 10px -1px;
+    text-align: center;
+    font-size: 23px;
+    padding: 17px 0 17px 0;
 }
 .packages ul {
   display: block;
@@ -606,10 +610,10 @@ h1 {
 }
 .packages button {
   cursor: pointer;
-  border: 1px solid #00000061;
+  border: 1px solid rgba(0, 0, 0, .38);
   border-radius: 2px;
-  background: #ffffffc7;
-  color: #040404c7;
+  background: rgba(255, 255, 255, .78);
+  color: rgba(4, 4, 4, .78);
   letter-spacing: 0.6px;
   font-size: 1em;
   padding: 10px 37px;
@@ -637,7 +641,7 @@ h1 {
   transition: all 0.5s ease-out;
 }
 .scale .price {
-  color: #f8b819;
+    color: rgba(255, 255, 255, .96);
 }
 
 /*Message*/
@@ -670,7 +674,8 @@ h1 {
 .page_about .top-text div h2 {
   text-align: center;
   font-size: 2.3em;
-  margin: 25px auto;
+  margin: 0 auto;
+  margin-bottom: 50px;
 }
 .page_about .top-text div p {
   text-align: left;
@@ -728,7 +733,7 @@ h1 {
   top: 0;
   left: 0;
   overflow: auto;
-  background: #0000006b;
+  background: background: rgba(0, 0, 0, .41);
 }
 .formdiv {  
   position: absolute;
@@ -741,8 +746,8 @@ h1 {
   left: 0;
   display: flex;
   text-align: center;
-  background-color: #fffffff7;
-  border: 2px solid #afe1fb96;
+  background-color: rgba(255, 255, 255, .96);
+  border: 2px solid rgba(175, 225, 251, .58);
   border-radius: 3px;
   animation: FormIn 0.5s linear;
   -webkit-animation: FormIn 0.5s linear;
@@ -764,6 +769,7 @@ h1 {
   left: 360px;
   width: 42px;
   height: 50px;
+  cursor: pointer;
 }
 .connect-form input {
   visibility: hidden;
