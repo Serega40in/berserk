@@ -1,73 +1,67 @@
-// .circles {
-//     position: absolute;
-//     top: 25px;
-//     left: 40px;
-// }
+.logo {
 
-.common {
-    width: 225px;
-    height: 225px;
-    top: 85px;
-    left: 90px;
+  img {
+    width: 139px;
+    position: relative;
+    top: 56px;
+    z-index: 10;
+}
+  }
+
+  .hoja {
+    color: #dcdce2;
     position: absolute;
-    border-radius: 90px;
-}
-
-.two {
-  border: 0.5px solid #a5a2a2;
-  transform: rotate(30deg);
-  animation: rotate-animation2 10s infinite linear;
-}
-
-.three {
-  border: 0.5px solid #4d4fd4;
-  transform: rotate(100deg);
-  animation: rotate-animation3 5s infinite linear;
-}
-
-.four {
-  border: 0.5px solid #579624;
-  transform: rotate(150deg);
-  animation: rotate-animation4 28s infinite linear;
-}
-
-.five {
-  border: 0.5px solid #24af9d;
-  animation: rotate-animation5 25s infinite linear;
-}
-
-@keyframes rotate-animation2 {
-  from {
-    transform: rotate(360deg);
+    top: 170px;
+    left: 158px;
+    margin-left: -140px;
+    margin-top: -140px;
+    width: 280px;
+    height: 280px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 35px;
+    line-height: 280px;
+    -webkit-font-smoothing: antialiased;
   }
-  to {
-    transform: rotate(0deg);
+  .hoja:after,
+  .hoja:before {
+    content: "";
+    border-radius: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: center center;
   }
-}
-
-@keyframes rotate-animation3 {
-  from {
-    transform: rotate(359deg);
+  .hoja:after {
+    box-shadow: inset 0 17.5px 0 rgba(174, 228, 253, 0.49), inset 17.5px 0 0 rgba(174, 229, 255, 0.42), inset 0 -17.5px 0 rgba(139, 192, 247, 0.34), inset -17.5px 0 0 rgba(143, 207, 253, 0.21);
+    animation: rotar 2s -0.5s linear infinite;
   }
-  to {
-    transform: rotate(0deg);
+  .hoja:before {
+    box-shadow: inset 0 17.5px 0 rgba(172, 236, 236, 0.42), inset 17.5px 0 0 rgba(128, 251, 251, 0.44), inset 0 -17.5px 0 rgba(116, 212, 243, 0.43), inset -17.5px 0 0 rgba(136, 226, 249, 0.45);
+    animation: rotarIz 2s -0.5s linear infinite;
   }
-}
-
-@keyframes rotate-animation4 {
-  from {
-    transform: rotate(150deg);
+  @keyframes rotar {
+    0% {
+      transform: rotateZ(0deg) scaleX(1) scaleY(1);
+    }
+    50% {
+      transform: rotateZ(180deg) scaleX(0.82) scaleY(0.95);
+    }
+    100% {
+      transform: rotateZ(360deg) scaleX(1) scaleY(1);
+    }
   }
-  to {
-    transform: rotate(510deg);
+  @keyframes rotarIz {
+    0% {
+      transform: rotateZ(0deg) scaleX(1) scaleY(1);
+    }
+    50% {
+      transform: rotateZ(-180deg) scaleX(0.95) scaleY(0.85);
+    }
+    100% {
+      transform: rotateZ(-360deg) scaleX(1) scaleY(1);
+    }
   }
-}
-
-@keyframes rotate-animation5 {
-  from {
-    transform: rotate(100deg);
-  }
-  to {
-    transform: rotate(459deg);
-  }
-}
+  
